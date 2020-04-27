@@ -1,14 +1,26 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d public",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahem-tech/Note-Taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ibrahem-tech/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/ibrahem-tech/Note-Taker#readme"
 }
