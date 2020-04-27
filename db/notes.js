@@ -33,15 +33,13 @@ class Notes {
     addNotes(note) {
         const { title, text } = note;
         const newNote = { title, text, id: ++this.idDum }
-        return this.getNotes()
-            .then(notes => [...notes, newNote])
+        return this.getNotes().then(notes => [...notes, newNote])
             .then(updateNotes => this.write(updateNotes))
             .then(() => newNote)
 
     }
     removeNote(id) {
-        return this.getNotes()
-            .then(notes => notes.filter(note => note.id !== parseInt(id)))
+        return this.getNotes().then(notes => notes.filter(note => note.id !== parseInt(id)))
             .then(updatedNotes => this.write(updatedNotes))
     }
 }
